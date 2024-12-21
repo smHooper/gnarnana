@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Within Sticky</title>
+  <style>
+    body {
+      height: 200vh; /* Long page to enable scrolling */
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .outer {
+      position: sticky;
+      top: 0; /* Outer element sticks at the top of the viewport */
+      background: #f4f4f4;
+      padding: 2rem;
+      z-index: 5;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .inner {
+      position: sticky;
+      top: 1rem; /* Inner element sticks relative to the outer container */
+      background: #333;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+      z-index: 10;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <p>Scroll down to see the nested sticky behavior!</p>
+  </section>
+  <div class="outer">
+    <p>Outer Sticky Element</p>
+    <div class="inner">
+      Inner Sticky Element
+    </div>
+  </div>
+  <section>
+    <p>Keep scrolling to test the behavior.</p>
+  </section>
+</body>
+</html>
