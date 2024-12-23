@@ -1,6 +1,6 @@
 :root {
     --main-header-font-size: 12vw;
-    --paragraph-font-size: 1.2rem;
+    --paragraph-font-size: 1rem;
     --main-nav-height: 3rem;
 }
 
@@ -13,14 +13,32 @@ html, body {
     font-size: var(--paragraph-font-size);
     scroll-behavior: smooth; /*for jump links*/
 }
-body {
-    background-image: url('../assets/imgs/nenana_mountain.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-    background-size: cover;
+
+.gnarnana-main-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.gnarnana-main-section:nth-child(odd) {
+    background: #333;
+}
+.gnarnana-main-section:nth-child(even) {
+    background: #fff;
 }
 
+
+/* ---------------------- */
+/* --- header section --- */
+/* ---------------------- */
+#header-section {
+    /* display: flex;
+    flex-wrap: wrap; */
+    background: none;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
 .main-nav {
     width: 100%;
     height: var(--main-nav-height);
@@ -31,6 +49,8 @@ body {
     top: -3rem; /*pins to the top when scrolled past header*/
     z-index: 10;
     transform: translateY(var(--main-nav-height)); /* make sure it's*/
+    transition: 0.25s all;
+    font-size: 1.2rem;
 }
 .main-nav .main-nav-link {
     margin: 0 5rem 0 5rem;
@@ -38,27 +58,22 @@ body {
     line-height: 2rem;
     color: var(--ui-color-secondary);
 }
-
-
-.gnarnana-main-section {
-    width: 100%;
-    height: 100vh;
+#main-nav.position-fixed {
+    background-color: #000;
 }
-.gnarnana-main-section:nth-child(odd) {
-    background: #333;
-}
-.gnarnana-main-section:nth-child(even) {
-    background: #fff;
-}
-
-#header-section {
-    /* display: flex;
-    flex-wrap: wrap; */
-    background: none;
-    position: sticky;
+#header-section-background-img {
+    position: absolute;
+    z-index: -1;
     top: 0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    background-image: url('../assets/imgs/nenana_mountain.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
 }
-
 .header-text {
     width: 100%;
     display: flex;
@@ -85,3 +100,71 @@ body {
 .header-text > .header-details-text {
     color: var(--ui-color-accent)
 }
+/* --- header section --- */
+/* ^^^^^^^^^^^^^^^^^^^^^^ */
+
+
+/* --------------------- */
+/* --- about section --- */
+/* --------------------- */
+#about-section {
+    background: #000;
+    display: flex;
+}
+#about-section > * {
+    padding: 2rem;
+    height: 100vh;
+}
+#race-map-img {
+    position: relative;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+.section-main-text-container {
+    padding: 3rem;
+    width: 50%;
+    background: #000000cc;
+    background: linear-gradient(90deg, #00000000 0%, #000000cc 30%);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+#about-section .section-main-text-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+#race-map-img .section-main-text-content {
+    text-align: right;
+}
+.section-main-text-content .main-text-header {
+    color: var(--ui-color-primary);
+}
+.section-main-text-content p {
+    color: white;
+}
+/* breakpoint for col-lg */
+@media (max-width: 992px) {
+    #about-section {
+        /* allow full image to be shown before text covers it */
+        height: 180vh;
+        /* make sure img is centered */
+        justify-content: center;
+        align-content: flex-end;
+    }
+    #race-map-img {
+        position: sticky;
+        height: 80vh;
+    }
+    #about-section .section-main-text-container {
+        /* text covers img from bottom so make transition smooth */
+        background: linear-gradient(180deg, #00000000 0%, #000000cc 10%);
+        width: 100%;
+    }
+}
+/* --- about section --- */
+/* ^^^^^^^^^^^^^^^^^^^^^ */
