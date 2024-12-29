@@ -19,9 +19,10 @@
   <header id="header-section" class="gnarnana-main-section">
     <div id="header-section-background-img">
     <div class="header-text">
-      <div class="hero-text">
-        <div class="font--caveat-regular text-uppercase">Gnarnana&nbsp;</div> 
-        <div class="font--caveat-brush-regular header-text-50">50</div>
+      <div class="hero-text font--caveat-regular text-uppercase d-flex flex-wrap align-items-start">
+        <span>Gnar</span>
+        <span class="">nana</span>
+        <span class="font--caveat-brush-regular header-text-50 ms-4">50</span>
       </div>
       <!--<div class="w-100"></div>
        <div class="header-details-text">
@@ -66,11 +67,13 @@
   </section>
 
   <script>
+    var $nav = $('#main-nav');
+    var navTop = $nav.offset().top
     function setNavPosition() {
       var scrollPosition = window.scrollY;
       var windowHeight = window.innerHeight;
-      $('#main-nav')
-        .toggleClass('position-fixed', scrollPosition > windowHeight);
+      $nav.toggleClass('position-fixed', scrollPosition > navTop);
+      $nav.toggleClass('background-gradient-black', scrollPosition >= windowHeight);
     }
     $(function() {
       $(window).on('scroll resize', setNavPosition);
