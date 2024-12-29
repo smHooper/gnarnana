@@ -52,8 +52,15 @@ html, body {
     transition: 0.25s all;
     font-size: 1.2rem;
 }
+.main-nav-link-container {
+    flex: 1 0 50%;
+    min-width: 50%;
+    max-width: 20rem;
+    display: flex;
+    justify-content: space-around;
+}
 .main-nav .main-nav-link {
-    margin: 0 5rem 0 5rem;
+    margin: 0 .5rem 0 .5rem;
     font-size: 2rem;
     line-height: 2rem;
     color: var(--ui-color-secondary);
