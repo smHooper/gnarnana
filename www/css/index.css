@@ -22,6 +22,7 @@ html, body {
 }
 .gnarnana-main-section:nth-child(odd) {
     background: #333;
+    color: #fff;
 }
 .gnarnana-main-section:nth-child(even) {
     background: #fff;
@@ -119,7 +120,9 @@ html, body {
 /* --------------------- */
 #about-section {
     background: #000;
+    color: #fff;
     display: flex;
+    font-size: 1.2rem;
 }
 #about-section > * {
     height: 100%;
