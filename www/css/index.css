@@ -111,6 +111,23 @@ html, body {
 .header-text > .header-details-text {
     color: var(--ui-color-accent)
 }
+#header-section .header-logo-outer-wrapper {
+    position: absolute;
+    bottom: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#header-section .header-logo-inner-container {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+#header-section .header-logo-inner-container > img{
+    max-width: 50%;
+    max-height: 100%;
+}
 /* --- header section --- */
 /* ^^^^^^^^^^^^^^^^^^^^^^ */
 
