@@ -13,6 +13,9 @@ html, body {
     font-size: var(--paragraph-font-size);
     scroll-behavior: smooth; /*for jump links*/
 }
+a {
+    color: var(--ui-color-secondary);
+}
 
 .gnarnana-main-section {
     width: 100%;
@@ -25,7 +28,8 @@ html, body {
     color: #fff;
 }
 .gnarnana-main-section:nth-child(even) {
-    background: #fff;
+    background: #000;
+    color: #fff;
 }
 
 .mobile-only {
@@ -195,10 +199,50 @@ html, body {
 }
 .section-main-text-content .main-text-header {
     color: var(--ui-color-primary);
+    font-family: 'Caveat', serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 900;
 }
-.section-main-text-content p {
+/* .section-main-text-content p {
     color: white;
+} */
+/* --- about section --- */
+/* ^^^^^^^^^^^^^^^^^^^^^ */
+
+
+
+/* --------------------- */
+/* --- event section --- */
+/* --------------------- */
+#event-info-section,
+#logistics-section {
+    padding: 3rem;
+    font-size: 1.2rem;
+    height: unset;
 }
+.subsection-header {
+    color: var(--ui-color-accent);
+}
+.event-schedule-list {
+    list-style: none;
+}
+#event-info-section .event-schedule-list a {
+    color: var(--ui-color-secondary);
+}
+#event-info-section .event-schedule-list li {
+    margin-bottom: 1.5rem;
+}
+.event-info-img-container {
+    height: 100%;
+    display: flex;
+    align-items: start;
+    padding: 0 2rem;
+}
+/* --- event section --- */
+/* ^^^^^^^^^^^^^^^^^^^^^ */
+
 /* breakpoint for col-lg */
 @media (max-width: 600px) {
     .header-text {
@@ -244,6 +288,8 @@ html, body {
         width: 100%;
         height: 50%;
     }
+    /* hide the img on small screens */
+    .event-info-img-container {
+        display: none;
+    }
 }
-/* --- about section --- */
-/* ^^^^^^^^^^^^^^^^^^^^^ */
