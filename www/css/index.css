@@ -22,6 +22,7 @@ a {
     height: 100%;
     position: relative;
     z-index: 1;
+    flex-wrap: wrap;
 }
 .gnarnana-main-section:nth-child(odd) {
     background: #333;
@@ -197,7 +198,7 @@ a {
 #race-map-img .section-main-text-content {
     text-align: right;
 }
-.section-main-text-content .main-text-header {
+.main-text-header {
     color: var(--ui-color-primary);
     font-family: 'Caveat', serif;
     font-optical-sizing: auto;
