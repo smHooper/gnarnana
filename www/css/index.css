@@ -204,6 +204,7 @@ a {
     font-style: normal;
     text-transform: uppercase;
     font-weight: 900;
+    margin-bottom: 1rem ;
 }
 /* .section-main-text-content p {
     color: white;
@@ -224,6 +225,7 @@ a {
 }
 .subsection-header {
     color: var(--ui-color-accent);
+    margin-top: 1.5rem;
 }
 .event-schedule-list {
     list-style: none;
@@ -232,7 +234,7 @@ a {
     color: var(--ui-color-secondary);
 }
 #event-info-section .event-schedule-list li {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.3rem;
 }
 .event-info-img-container {
     height: 100%;
