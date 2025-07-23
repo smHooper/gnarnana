@@ -200,7 +200,8 @@ a {
 }
 .main-text-header {
     color: var(--ui-color-primary);
-    font-family: 'Caveat', serif;
+    font-family: 'Rock Salt', serif;
+    font-size: 1.5rem;
     font-optical-sizing: auto;
     font-style: normal;
     text-transform: uppercase;
