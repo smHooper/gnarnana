@@ -162,13 +162,13 @@ a {
 /* --------------------- */
 /* --- about section --- */
 /* --------------------- */
-#about-section {
+#about {
     background: #000;
     color: #fff;
     display: flex;
     font-size: 1.2rem;
 }
-#about-section > * {
+#about > * {
     height: 100%;
 }
 #race-map-img {
@@ -190,7 +190,7 @@ a {
     z-index: 3;
     overflow-y: auto;
 }
-#about-section .section-main-text-content {
+#about .section-main-text-content {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -219,8 +219,8 @@ a {
 /* --------------------- */
 /* --- event section --- */
 /* --------------------- */
-#event-info-section,
-#logistics-section {
+#events,
+#logistics {
     padding: 3rem;
     font-size: 1.2rem;
     height: unset;
@@ -232,10 +232,10 @@ a {
 .event-schedule-list {
     list-style: none;
 }
-#event-info-section .event-schedule-list a {
+#events .event-schedule-list a {
     color: var(--ui-color-secondary);
 }
-#event-info-section .event-schedule-list li {
+#events .event-schedule-list li {
     margin-bottom: 1.3rem;
 }
 .event-info-img-container {
@@ -260,7 +260,7 @@ a {
         width: 100%;
         font-size: 40vw;
     }
-    #about-section {
+    #about {
         /* allow full image to be shown before text covers it */
         height: 160%;
         /* make sure img is centered */
@@ -274,7 +274,7 @@ a {
         padding: 0;
         content: url('../assets/imgs/gnarnana_map_mobile.jpg');
     }
-    #about-section > .race-map-mobile-top-screen {
+    #about > .race-map-mobile-top-screen {
         width: 100%;
         position: absolute;
         z-index: 2;
@@ -285,7 +285,7 @@ a {
         background: linear-gradient(0deg, #00000000 
         0%, #000000 100%);
     }
-    #about-section .section-main-text-container {
+    #about .section-main-text-container {
         /* text covers img from bottom so make transition smooth */
         background: #000000cc;
         background: linear-gradient(180deg, #00000000 0%, #000000cc 10%);
