@@ -45,3 +45,15 @@
 .underlined {
     text-decoration: underline;
 }
+.large-button {
+    max-width: min(80%, 25rem);
+    flex: 1 0 auto;
+    height: 7rem;
+    line-height: 7rem;
+    border: 3px solid var(--ui-color-secondary); 
+    border-radius: 2rem;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.7rem;
+    transform: translateZ(0);
+}
