@@ -40,6 +40,12 @@
     max-width: 100%;
     object-fit: contain;
 }
+.img-full-height {
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
 .rounded-corners {
     border-radius: 2rem;
 }
