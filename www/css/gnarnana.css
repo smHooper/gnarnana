@@ -38,6 +38,7 @@
 .img-full-width {
     height: auto;
     max-width: 100%;
+    object-fit: contain;
 }
 .rounded-corners {
     border-radius: 2rem;
