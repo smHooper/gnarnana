@@ -220,8 +220,7 @@ a {
 /* --------------------- */
 /* --- event section --- */
 /* --------------------- */
-#events,
-#logistics {
+.text-content-section {
     padding: 3rem;
     font-size: 1.2rem;
     height: unset;
