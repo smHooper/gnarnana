@@ -207,7 +207,8 @@ a {
     font-style: normal;
     text-transform: uppercase;
     font-weight: 900;
-    margin-bottom: 1rem ;
+    margin-bottom: 1rem;
+    line-height: 2.5rem;
 }
 /* .section-main-text-content p {
     color: white;
