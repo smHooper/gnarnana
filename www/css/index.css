@@ -104,7 +104,7 @@ a {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 10vh;
+    padding-top: 10vh;
     margin-bottom: 15vh;
     /* align-items: center; */
 }
