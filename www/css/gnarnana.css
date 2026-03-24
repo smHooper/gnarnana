@@ -64,3 +64,10 @@
     font-size: 1.7rem;
     transform: translateZ(0);
 }
+.circular-img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+.tasteful-drop-shadow {
+    box-shadow: #00000033 4px 5px 13px 6px;
+}
