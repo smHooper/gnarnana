@@ -148,7 +148,8 @@ a {
 }
 #header-section .mobile-logo-container {
     flex: 1 1 auto;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 3rem;
     align-items: center;
     padding-right: 2rem;
 }
