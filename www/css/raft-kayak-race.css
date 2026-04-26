@@ -1,0 +1,8 @@
+@media (max-width: 600px) {
+    #race-map-img {
+        height: 60%;
+        width: 100%;
+        padding: 0;
+        content: url('../assets/imgs/rodeo-main-mobile.jpg');
+    }
+}
