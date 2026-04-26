@@ -12,6 +12,7 @@ html, body {
     font-style: normal;
     font-size: var(--paragraph-font-size);
     scroll-behavior: smooth; /*for jump links*/
+    background: black;
 }
 a {
     color: var(--ui-color-secondary);
@@ -274,12 +275,15 @@ a {
     height: min(24vw, 50vh);
     margin-bottom: 1.5rem;
     flex: 0 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
 }
 .event-pane-image {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
+    transition: transform 0.25s ease;
 }
 .event-pane-description {
     max-width: 20rem;
@@ -303,8 +307,27 @@ a {
     object-fit: cover;
 }
 
+#contact .circular-img {
+    width: 100%;
+    height: auto;
+}
+
 /* --- event section --- */
 /* ^^^^^^^^^^^^^^^^^^^^^ */
+.event-pane-link {
+    text-decoration: none;
+    color: inherit;
+}
+.event-pane-link .event-pane-header,
+.event-pane-link .event-pane-image,
+.event-pane-link .event-pane-image {
+    transition: transform 0.25s ease;
+}
+.event-pane-link:hover .event-pane-header,
+.event-pane-link:hover .event-pane-image,
+.event-pane-link:focus-visible .event-pane-image {
+    transform: scale(1.05);
+}
 
 /* breakpoint for col-lg */
 @media (max-width: 900px) {

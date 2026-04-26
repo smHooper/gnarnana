@@ -65,8 +65,11 @@
     transform: translateZ(0);
 }
 .circular-img {
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
+    display: block;
     object-fit: cover;
+    overflow: hidden;
 }
 .tasteful-drop-shadow {
     box-shadow: #00000033 4px 5px 13px 6px;
